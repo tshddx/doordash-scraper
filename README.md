@@ -1,6 +1,6 @@
 # DoorDash Scraper
 
-Have you ever wanted to download your entire order history from [DoorDash](https://www.doordash.com)? We wanted to do this at [my office](https://www.golden.com) but were unable to find anywhere on their website to do so. So here's my quick solution. Feel free to modify it to fit your desires⁠—there are a lot more data available that this script is not ingesting.
+Have you ever wanted to download your entire order history from [DoorDash](https://www.doordash.com)? We wanted to do this at [my office](https://www.golden.com) but were unable to find anywhere on their website to do so. Here's my quick solution. Feel free to modify it to fit your desires⁠—there are a lot more data available that this script is not ingesting.
 
 ## Instructions
 
