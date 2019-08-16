@@ -22,3 +22,24 @@ Fri Aug 16 15:27:02 2019   Got an empty batch, so we're done fetching order summ
 Fri Aug 16 15:27:02 2019   Writing normal CSV doordash.csv
 Fri Aug 16 15:27:02 2019   Writing pivoted CSV doordash-pivot.csv
 ```
+
+## Output format
+
+### doordash.csv
+
+| Date | Store | Person | Item | Options |
+| ---- | ----- | ------ | ---- | ------- | 
+| 2019-07-08 | Piri Picante | Thomas S. | Whole Bird Combo | Side Choice: Three Bean Chili |
+| 2019-07-02 | Burma Love | Alice A. | Skillet Shrimp (6 Pc) |
+| 2019-07-02 | Burma Love | Thomas S. | Burmese Chicken Salad |
+| 2019-05-26 | Lers Ros Thai | Thomas S. | 78. Pad Thai | Protein Choice: Pork |
+| 2019-05-26 | Lers Ros Thai | Alice A. | 57. Kao Pad Kai Tod |
+
+### doordash-pivot.csv
+
+This table has one row per delivery, and one column per person who ordered an item in that delivery. The script currently only outputs a single item per person per delivery. This is useful if you want to see which items you have previously ordered from a restaurant.
+
+| Date | Store | Thomas S. | Bobert B. | Alice A. |
+| ---- | ----- | --------- | --------- | -------- |
+| 2019-08-05 | Lovely Restaurant | Spicy Bulgogi Pork | Cotton candy | Candy marbles |
+| 2019-07-08 | Faster Food | Pepperoni pizza | Cotton candy | Toffee bar |
