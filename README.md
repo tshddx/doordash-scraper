@@ -13,7 +13,7 @@ Have you ever wanted to download your entire order history from [DoorDash](https
 
 Now just run the scraper with your sessionid. It will output two CSV files containing all your DoorDash orders.
 
-**Note:** In addition to the `doordash.csv` and `doordash-pivot.csv` files, this script will generate a lot of JSON files in your current directory (roughly one per order). These are the raw responses from each network request. This allows the script to resume where it left off if something goes wrong.
+> **Note:** In addition to the `doordash.csv` and `doordash-pivot.csv` files, this script will generate a lot of JSON files in your current directory (roughly one per order). These are the raw responses from each network request. This allows the script to resume where it left off if something goes wrong. If you want to run the script another time with a different sessionid, you'll need to delete all these JSON files so that the script does not think it is resuming.
 
 ```bash
 > python doordash_scraper.py 6ess7lab6uzx9xq8c3rey5yzzjn6c6cat
